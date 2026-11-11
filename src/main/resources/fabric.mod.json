@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hitdistance",
+  "version": "${version}",
+  "name": "Hit Distance HUD",
+  "description": "A client-side HUD that estimates the distance to a player when they damage you.",
+  "environment": "client",
+  "license": "MIT",
+  "entrypoints": {
+    "client": [
+      "de.c20za.hitdistance.HitDistanceClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "hitdistance.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
